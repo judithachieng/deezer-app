@@ -1,0 +1,32 @@
+a{
+    text-decoration: none;
+}
+
+#artist-card{
+    width: 300px;
+
+}
+
+mat-card {
+    margin: 30px
+}
+
+// img{
+//     width: 100%;
+// }
+
+h2 {
+    text-align: center;
+    color: #0a0a16;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.card-avatar {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+}

@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="header-image">
+        <a href="/"><img src="assets/images/deezer.png"></a>
+    </div>
+    <div class="search-bar">
+        <mat-icon class="search-icon">search</mat-icon>
+        <input class="search-input" type="text" placeholder="Search for an artist" [(ngModel)]="searchTerm" (keyup)="searchArtist()" >
+    </div>
+</div>
+
+<div id="artists">
+    <ng-container *ngFor="let artist of artists">
+        <app-artist [artist] = "artist"></app-artist>
+    </ng-container>
+ </div>
