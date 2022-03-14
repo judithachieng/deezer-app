@@ -1,9 +1,13 @@
-
-<mat-card id="track-list">
-    <mat-card-title>Top Tracks</mat-card-title>
-        <ng-container *ngFor="let track of tracks">
-            <li><h4>{{track.title}}</h4><h5>{{ track.duration }}</h5></li>
-        </ng-container>
-    </mat-card>
+   
+                <mat-card id="track-list">
+                    <h1>Top tracks</h1>
+                    <mat-card-content>
+                        <ol>
+                        <ng-container *ngFor="let track of tracks">
+                            <app-track [track]="track"></app-track>
+                        </ng-container>
+                    </ol>
+                    </mat-card-content>
+      </mat-card>
 
 

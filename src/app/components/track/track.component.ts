@@ -8,11 +8,12 @@ import { Track } from '../../models/track/track'
 })
 export class TrackComponent implements OnInit {
 
-  @Input()trackItem: Track;
+  @Input()track: Track;
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
