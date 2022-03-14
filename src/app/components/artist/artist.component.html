@@ -1,0 +1,21 @@
+<!-- <div id="artist-card">
+    <a [routerLink] ="['/artist', artist.id]">
+        <div class="avatar">
+            <img src="{{artist.picture_medium}}">
+            <div class="artist-details">
+                <h2>{{artist.name}}</h2>
+                <h2>{{artist.nb_fan}} Fans</h2>
+            </div>
+        </div>
+    </a>
+</div> -->
+
+<mat-card id="artist-card">
+    <a [routerLink] ="['/artist', artist.id]">
+     <img mat-card-image src="{{artist.picture_medium}}" >
+     <mat-card-content>
+       <h2>{{artist.name}}</h2>
+       <h2>{{artist.nb_fan}} Fans</h2>
+     </mat-card-content>
+     </a>
+</mat-card>
