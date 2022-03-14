@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/',
+  searchUrl: 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q="'
 };
 
 /*
