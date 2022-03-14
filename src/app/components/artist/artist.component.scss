@@ -22,3 +22,11 @@ h2 {
     font-size: 14px;
     margin: 5px;
 }
+
+.card-avatar {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
