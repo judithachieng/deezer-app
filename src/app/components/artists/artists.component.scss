@@ -1,9 +1,8 @@
 .header {
     // background: #ffff;
-    position: fixed;
+    // position: fixed;
     width: 100%;
     display: flex;
-    margin: 0 75px
 }
 
 img { 
@@ -38,6 +37,12 @@ mat-icon{
     font-size: 30px;
     color: #757575;
     cursor: pointer;
+}
+
+#artists {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 

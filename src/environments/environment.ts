@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   baseUrl: 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/',
-  searchUrl: 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q="'
+  searchUrl: 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q='
 };
 
 /*

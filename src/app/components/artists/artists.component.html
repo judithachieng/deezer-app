@@ -4,12 +4,12 @@
     </div>
     <div class="search-bar">
         <mat-icon class="search-icon">search</mat-icon>
-        <input class="search-input" placeholder="Search for an artist"/>
+        <input class="search-input" type="text" placeholder="Search for an artist" [(ngModel)]="searchTerm" (keyup)="searchArtist()" >
     </div>
 </div>
 
 <div id="artists">
-    <!-- <ng-container *ngFor="let artist of artists">
+    <ng-container *ngFor="let artist of artists">
         <app-artist [artist] = "artist"></app-artist>
-    </ng-container> -->
+    </ng-container>
  </div>
