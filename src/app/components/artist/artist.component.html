@@ -12,7 +12,7 @@
 
 <mat-card id="artist-card">
     <a [routerLink] ="['/artist', artist.id]">
-     <img mat-card-image src="{{artist.picture_medium}}" >
+     <img class="card-avatar" src="{{artist.picture_medium}}" >
      <mat-card-content>
        <h2>{{artist.name}}</h2>
        <h2>{{artist.nb_fan}} Fans</h2>

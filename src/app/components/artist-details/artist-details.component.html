@@ -1,1 +1,15 @@
-<p>artist-details works!</p>
+<div id="artist-info-card">
+    <mat-card class="profile-card">
+        <mat-card-title-group>
+            <mat-card-title id="profile-name">{{artist.name}}</mat-card-title>
+            <mat-card-subtitle id="profile-fan">{{artist.nb_fan }} fans</mat-card-subtitle>
+            <img mat-card-xl-image src={{artist.picture_xl}} >
+        </mat-card-title-group>
+    </mat-card>
+    <app-tracks></app-tracks>
+</div>
+
+
+
+    
+<app-albums [albumArtist]="artist"></app-albums>

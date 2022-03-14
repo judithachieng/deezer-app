@@ -14,6 +14,8 @@ import { AlbumsComponent } from './components/albums/albums.component';
 import { ArtistDetailsComponent } from './components/artist-details/artist-details.component';
 import { ArtistsComponent } from './components/artists/artists.component';
 import { ArtistComponent } from './components/artist/artist.component';
+import { TrackComponent } from './components/track/track.component';
+import { TracksComponent } from './components/tracks/tracks.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ArtistComponent } from './components/artist/artist.component';
     AlbumsComponent,
     ArtistDetailsComponent,
     ArtistsComponent,
-    ArtistComponent
+    ArtistComponent,
+    TrackComponent,
+    TracksComponent
   ],
   imports: [
     BrowserModule,
