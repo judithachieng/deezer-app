@@ -1,10 +1,12 @@
 .header {
     background: #972ce1;;
-    // position: fixed;
     width: 100%;
     display: flex;
     max-height:100px;
-    // height: 10%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
 }
 
 .header-image {
@@ -56,6 +58,7 @@ mat-icon{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 
