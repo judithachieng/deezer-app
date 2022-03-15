@@ -16,7 +16,7 @@ export class ArtistsComponent implements OnInit {
   constructor( private artistService: ArtistService) { }
 
   ngOnInit(): void {
-    // this.loadArtists(1,13);
+    this.loadArtists(1,13);
   }
 
 
@@ -36,14 +36,14 @@ export class ArtistsComponent implements OnInit {
 
   searchArtist(): void {
     this.artists = new Array();
-    // if ((this.searchTerm === '') || (this.searchTerm === ' ')) {
-    //   this.loadArtists(1, 13);
-    // } else {
+    if ((this.searchTerm === '') || (this.searchTerm === ' ')) {
+      this.loadArtists(1, 13);
+    } else {
       this.artistService.searchArtist(this.searchTerm).subscribe((result) => {
         this.artists = result.data
           
         });
     
     }
-  // }
+  }
 }

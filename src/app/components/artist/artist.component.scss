@@ -4,6 +4,10 @@ a{
 
 #artist-card{
     width: 300px;
+    display: flex;
+    justify-content: center;
+    // border: 1px solid #972ce1;
+    // box-shadow: none;
 
 }
 
@@ -11,22 +15,21 @@ mat-card {
     margin: 30px
 }
 
-// img{
-//     width: 100%;
-// }
 
-h2 {
+.card-text {
     text-align: center;
     color: #0a0a16;
     font-weight: normal;
     font-size: 14px;
-    margin: 5px;
+    // margin: 5px;
 }
 
+
 .card-avatar {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     flex-shrink: 0;
     object-fit: cover;
+    
 }
