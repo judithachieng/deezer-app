@@ -1,21 +1,9 @@
-<!-- <div id="artist-card">
-    <a [routerLink] ="['/artist', artist.id]">
-        <div class="avatar">
-            <img src="{{artist.picture_medium}}">
-            <div class="artist-details">
-                <h2>{{artist.name}}</h2>
-                <h2>{{artist.nb_fan}} Fans</h2>
-            </div>
-        </div>
-    </a>
-</div> -->
-
 <mat-card id="artist-card">
     <a [routerLink] ="['/artist', artist.id]">
      <img class="card-avatar" src="{{artist.picture_medium}}" >
      <mat-card-content>
-       <h2>{{artist.name}}</h2>
-       <h2>{{artist.nb_fan}} Fans</h2>
+       <div class="card-text" id="artist-fanbase">{{artist.name}}</div>
+       <div class="card-text" id="artist-fanbase">{{artist.nb_fan}} Fans</div>
      </mat-card-content>
      </a>
 </mat-card>
