@@ -1,4 +1,4 @@
-<div id="artist-info-card">
+<!-- <div id="artist-info-card">
     <mat-card class="profile-card">
         <mat-card-title-group>
             <mat-card-title id="profile-name">{{ artist.name }}</mat-card-title>
@@ -12,4 +12,26 @@
 
 
     
-<app-albums [albumArtist]="artist"></app-albums>
+<app-albums [albumArtist]="artist"></app-albums> -->
+
+<div class="artist-details">
+    <div class="details-container artist-tracks-section">
+        <div class="artist-profile">
+            <!-- <mat-card class="profile-card"> -->
+                <!-- <mat-card-title-group> -->
+                    <!-- <mat-card-title id="profile-name">{{ artist.name }}</mat-card-title> -->
+                    <!-- <mat-card-subtitle id="profile-fan">{{ artist.nb_fan }} fans</mat-card-subtitle> -->
+                    <!-- <img mat-card-xl-image src={{artist.picture_xl}} > -->
+                <!-- </mat-card-title-group> -->
+            <!-- </mat-card> -->
+        </div>
+        <div class="artist-tracks">
+            <span id="tracks-header" class="details-header">Top Tracks</span>
+            <app-tracks></app-tracks>
+        </div>
+    </div>
+    <div class="details-container artist-albums">
+        <span id="albums-header" class="details-header">Albums</span>
+        <app-albums [albumArtist]="artist"></app-albums>
+    </div>
+</div>

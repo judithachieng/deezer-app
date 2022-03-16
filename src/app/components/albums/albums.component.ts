@@ -21,6 +21,7 @@ export class AlbumsComponent implements OnInit {
       .subscribe((a) => {
         if (!('error' in a)) {
           this.albums = a.data.slice(0,4);
+          
         }
       });
   }
